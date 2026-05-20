@@ -16,6 +16,24 @@
 >
 > ❌ Remember that this is a public repo. Do NOT include: Proprietary data, PII, API keys, credentials, or anything confidential.
 
+## 📋 BTT Internal Evaluation Notes
+*(This section is for BTT staff only — remove before sharing with students)*
+
+| Check | Status | Notes |
+|-------|--------|-------|
+| Python Compatibility | 🟡 | While the tech stack is predominantly Python, tools like LangChain and LangGraph may introduce additional complexity that requires careful integration and understanding from students. |
+| Data Readiness | 🟡 | The status of data readiness is unclear; the actual size and structure of the datasets have not been disclosed, which could lead to data preparation challenges that need to be assessed at the start of the project. |
+| Resource Check | 🟢 | No specialized hardware or proprietary software issues are identified in the submission. The tools indicated are available for student access. |
+
+**Student Fit Score:** 5/10  
+**Technical Depth Score:** 7/10  
+**Overall Recommendation:** REVISE
+
+**Advisor Feedback Draft:**
+The proposed project is intriguing with the potential for significant practical applications in the field of AI and finance. However, clarity on data size and structure is essential for a successful student experience. I recommend refining the project scope to better fit the student's current capabilities while allowing for incremental learning.
+
+---
+
 ### Project Milestones
 
 Use these milestones to guide your work. Your team will create a **GitHub Projects board** to track tasks within each milestone.
@@ -136,23 +154,5 @@ I'm excited to work with you!
 ## ❓ Questions?
 
 Please bring any questions to our first meeting during the week of August 24th (Break Through Tech's Bridge to Studio - Session B).
-
----
-
-## 📋 BTT Internal Evaluation Notes
-*(This section is for BTT staff only — remove before sharing with students)*
-
-| Check | Status | Notes |
-|-------|--------|-------|
-| Python Compatibility | YELLOW | While the tech stack is predominantly Python, the use of tools like LangChain and LangGraph may introduce additional complexities that require careful integration and understanding from the students. |
-| Data Readiness | YELLOW | The status of data readiness is unclear; the actual size and structure of the datasets have not been disclosed, which could lead to challenges in data preparation that need to be assessed at the start of the project. |
-| Resource Check | GREEN | No specialized hardware or proprietary software issues are identified in the submission. The tools indicated are available for student access. |
-
-**Student Fit Score:** 5/10  
-**Technical Depth Score:** 7/10  
-**Overall Recommendation:** REVISE
-
-**Advisor Feedback Draft:**
-The proposed project is intriguing with the potential for significant practical applications in the field of AI and finance. However, clarity on data size and structure is essential for a successful student experience. I recommend refining the project scope to better fit the student's current capabilities while allowing for incremental learning.
 
 ---
