@@ -16,47 +16,15 @@
 >
 > ❌ Remember that this is a public repo. Do NOT include: Proprietary data, PII, API keys, credentials, or anything confidential.
 
----
-
-### 🔍 SME Feedback from the Break Through Tech Evaluation Team
-
-*Challenge Advisor: Please address the following feedback by editing this page. Your AI Studio Coach can help make project adjustments as needed, too. In addition to the grey section above, this section should be removed before sharing the repo with your student team.*
-
----
-
-# [Project Title]
-
-**Company / Org:** [Company / Org Name]  
-**Challenge Advisor:** [Name, Title, Email]  
-**Program:** Break Through Tech AI Studio - Fall 2026
-
----
-
-## 🏢 About [Company / Org Name]
-
-[2-3 sentences about your company: what you do, your industry, etc. You may also choose to specify your specific department or team.]
-
----
-
-## 🎯 The Challenge
-
-### Project Summary
-[In 2-3 sentences, describe what you're asking the team to do. Be specific about the type of data, ML techniques, and potential impact.]
-
-> **Example:** "In this project, your team will use customer transaction data and classification algorithms to build a model that predicts which users are likely to churn. This will help our retention team prioritize outreach."
-
-### Success Criteria
-[What does success look like? Describe evaluation metrics (accuracy, F1 score, etc.) or qualitative outcomes that would make this project valuable to your company.]
-
 ### Project Milestones
 
 Use these milestones to guide your work. Your team will create a **GitHub Projects board** to track tasks within each milestone.
 
-| Month | Milestone | Key Activities |
-|-------|-----------|----------------|
-| **September** | [e.g., Data Understanding] | [e.g., Explore dataset, handle missing values, document findings] |
-| **October** | [e.g., Model Development] | [e.g., Train baseline model, experiment with approaches, iterate] |
-| **November** | [e.g., Evaluation & Presentation] | [e.g., Finalize model, prepare presentation, document results] |
+| Month       | Milestone                  | Key Activities                                         |
+|-------------|----------------------------|-------------------------------------------------------|
+| **September** | Data Understanding         | Explore dataset, handle missing values, document findings |
+| **October**   | Model Development          | Train baseline model, experiment with approaches, iterate |
+| **November**  | Evaluation & Presentation   | Finalize model, prepare presentation, document results |
 
 > **Note for the team:** Please create a GitHub Projects board in this repository to break these milestones into weekly tasks. Go to the **Projects** tab → **New project** → Choose **Board** → Add columns for each month.
 
@@ -64,27 +32,58 @@ Use these milestones to guide your work. Your team will create a **GitHub Projec
 
 ## 📊 Dataset
 
-**Name and Source:** [Dataset name and where it's from]  
-**Format:** [e.g., CSV, JSON, images]  
-**Size:** [Approximate size in MB/GB]  
+**Name and Source:** Real ABS prospectuses (Toyota TALNT, Verizon ABS, Sallie Mae SMB Trust) from SEC EDGAR 424B filings  
+**Format:** PDF  
+**Size:** unknown  
 **Location:** [Link to dataset or instructions for accessing it]
 
 ### Key Details
-- [Brief description of what's in the data]
-- [Any known limitations or preprocessing needed]
+- Real ABS prospectuses from SEC EDGAR 424B filings
+- No known limitations or preprocessing needed
 - [Link to data dictionary or documentation, if available]
+
+# AI Due Diligence Agent for ABS Prospectuses
+
+**Company / Org:** PIMCO  
+**Challenge Advisor:** N/A  
+**Program:** Break Through Tech AI Studio - Fall 2026
+
+---
+
+## 🏢 About PIMCO
+
+PIMCO is a leading global investment management firm, specializing in fixed income and alternative investments. Our focus is on leveraging innovative technology and data analytics to optimize investments and manage risk effectively.
+
+---
+
+## 🎯 The Challenge
+
+### Project Summary
+Build a deep agentic AI system using LangChain and LangGraph that autonomously conducts structured due diligence on a publicly available ABS prospectus — breaking a DD checklist into subtasks, retrieving relevant evidence from the document, reasoning through each question, self-evaluating the sufficiency of its answers, and generating a comprehensive cited due diligence report.
+
+### Success Criteria
+Agent self-scores (Complete / Partial / Not Found + confidence float), Evaluation against 30 hand-crafted Q&A pairs, and stretch goal completeness score.
 
 ---
 
 ## 🛠️ Suggested Approach
 
-**ML Problem Type:** [e.g., Classification, Regression, NLP, Computer Vision, LLM/RAG]
+**ML Problem Type:** NLP
 
 **Recommended Libraries:**
-- [e.g., pandas, scikit-learn, TensorFlow, Hugging Face]
+- langchain
+- langgraph
+- openai
+- faiss-cpu
+- pdfplumber
+- sec-edgar-downloader
+- pydantic
+- streamlit
+- fpdf2
+- pandas
 
 **Evaluation Metrics:**
-- [e.g., Accuracy, Precision/Recall, RMSE, BLEU score]
+- Completeness score, confidence float metrics
 
 ---
 
@@ -93,16 +92,16 @@ Use these milestones to guide your work. Your team will create a **GitHub Projec
 The following resources will help your team understand the problem space and potential technical approaches for this project:
 
 **Background Reading:**
-- [e.g., Link to an article or blog post about the problem domain]
-- [e.g., Link to an industry report or case study]
+- [Link to an article or blog post about the problem domain]
+- [Link to an industry report or case study]
 
 **Technical Tutorials:**
-- [e.g., Link to a free tutorial on the ML technique(s) involved]
-- [e.g., Link to documentation for a key library or tool]
+- [Link to a free tutorial on the ML technique(s) involved]
+- [Link to documentation for a key library or tool]
 
 **Code Examples:**
-- [e.g., Link to a relevant GitHub repo]
-- [e.g., Link to a sample implementation or starter code]
+- [Link to a relevant GitHub repo]
+- [Link to a sample implementation or starter code]
 
 **Other:**
 - [Links to any additional resources — e.g., papers, videos, podcasts, etc.]
@@ -130,10 +129,30 @@ The following resources will help your team understand the problem space and pot
 2. **Begin reviewing the dataset** using the link above
 3. **Read the GitHub Projects documentation** [here](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
 
-I’m excited to work with you!
+I'm excited to work with you!
 
 ---
 
 ## ❓ Questions?
 
-Please bring any questions to our first meeting during the week of August 24th (Break Through Tech’s Bridge to Studio - Session B). 
+Please bring any questions to our first meeting during the week of August 24th (Break Through Tech's Bridge to Studio - Session B).
+
+---
+
+## 📋 BTT Internal Evaluation Notes
+*(This section is for BTT staff only — remove before sharing with students)*
+
+| Check | Status | Notes |
+|-------|--------|-------|
+| Python Compatibility | YELLOW | While the tech stack is predominantly Python, the use of tools like LangChain and LangGraph may introduce additional complexities that require careful integration and understanding from the students. |
+| Data Readiness | YELLOW | The status of data readiness is unclear; the actual size and structure of the datasets have not been disclosed, which could lead to challenges in data preparation that need to be assessed at the start of the project. |
+| Resource Check | GREEN | No specialized hardware or proprietary software issues are identified in the submission. The tools indicated are available for student access. |
+
+**Student Fit Score:** 5/10  
+**Technical Depth Score:** 7/10  
+**Overall Recommendation:** REVISE
+
+**Advisor Feedback Draft:**
+The proposed project is intriguing with the potential for significant practical applications in the field of AI and finance. However, clarity on data size and structure is essential for a successful student experience. I recommend refining the project scope to better fit the student's current capabilities while allowing for incremental learning.
+
+---
