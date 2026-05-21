@@ -31,7 +31,6 @@
 **Advisor Feedback Draft:**
 The proposed project is intriguing with the potential for significant practical applications in the field of AI and finance. However, clarity on data size and structure is essential for a successful student experience. I recommend refining the project scope to better fit the student's current capabilities while allowing for incremental learning.
 
-[Detail SME Project Feedback](./SME_Feedback)
 ---
 
 ### Project Milestones
